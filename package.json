@@ -1,0 +1,20 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "html": "live-server --open=./index.html",
+    "server": "json-server source/data.json --port=3005",
+    "dev": "concurrently 'npm run server' 'npm run html'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "json-server": "^1.0.0-beta.2",
+    "live-server": "^1.2.2"
+  }
+}
